@@ -24,7 +24,7 @@ setup(
     author_email='bwmcadams@evilmonkeylabs.com',
     packages=['tornad_io', 'tornad_io.websocket'],
     scripts=[],
-    url='http://github.com/novus/SocketTornad.IO',
+    url='http://github.com/SocketTornadIO/SocketTornad.IO',
     license=license,
     description='Python implementation of the Socket.IO protocol for the Tornado webserver/framework.',
     long_description=readme,
