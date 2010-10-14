@@ -5,8 +5,6 @@ SocketTornad.IO
 Release 0.1.3
 ^^^^^^^^^^^^^
 
-
-
   Copyright (c) 2010, Brendan W. McAdams & Novus Partners, Inc. <http://novus.com> 
 
   Licensed under the Apache License, Version 2.0 (the "License");
