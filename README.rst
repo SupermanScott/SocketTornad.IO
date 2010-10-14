@@ -9,7 +9,6 @@ Brendan W. McAdams bwmcadams@evilmonkeylabs.com
 -----------------------------------------------
 
 
-::
   Copyright (c) 2010, Brendan W. McAdams & Novus Partners, Inc. <http://novus.com> 
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,8 +27,8 @@ Brendan W. McAdams bwmcadams@evilmonkeylabs.com
 Contributors
 ~~~~~~~~~~~~
 
-`Matt Swanson <http://github.com/swanson>`_
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- `Matt Swanson <http://github.com/swanson>`_
+
 
 Implementation of the `Socket.IO <http://socket.io>`_ Websocket
 emulation protocol in Python on top of the non-blocking
