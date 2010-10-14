@@ -5,6 +5,14 @@ SocketTornad.IO
 Release 0.1.3
 ^^^^^^^^^^^^^
 
+Contributors
+------------
+- Brendan W. McAdams bwmcadams@evilmonkeylabs.com
+- `Matt Swanson <http://github.com/swanson>`_
+
+
+License
+-------
   Copyright (c) 2010, Brendan W. McAdams & Novus Partners, Inc. <http://novus.com> 
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,10 +28,6 @@ Release 0.1.3
   limitations under the License.
 
 
-Contributors
-------------
-- Brendan W. McAdams bwmcadams@evilmonkeylabs.com
-- `Matt Swanson <http://github.com/swanson>`_
 
 
 Implementation of the `Socket.IO <http://socket.io>`_ Websocket
