@@ -138,7 +138,7 @@ class SocketIOHandler(tornado.web.RequestHandler):
             extraRE = "(?P<extra>)"
 
         protoRE = "(%s)" % "|".join(PROTOCOLS.keys())
-        route = (r"/(?P<resource>%s)%s/(?P<protocol>%s)/?(?P<session_id>[0-9a-zA-Z]*?)/?((?P<protocol_init>\d*?)|(?P<xhr_path>\w*?))/?(?P<jsonp_index>\d*?)" % (resource, extraRE, protoRE), cls)
+        route = (r"/(?P<resource>%s)%s/(?P<protocol>%s)/?(?P<session_id>[0-9a-zA-Z]*)/?((?P<protocol_init>\d*?)|(?P<xhr_path>\w*?))/?(?P<jsonp_index>\d*?)" % (resource, extraRE, protoRE), cls)
         return route
 
 class SocketIOServer(tornado.httpserver.HTTPServer):

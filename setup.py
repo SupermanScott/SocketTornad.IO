@@ -8,7 +8,7 @@ except ImportError:
 
 setup(
     name='SocketTornad.IO',
-    version='0.1.2',
+    version='0.1.3',
     author='Brendan W. McAdams',
     author_email='bmcadams@novus.com',
     packages=['tornad_io', 'tornad_io.websocket'],

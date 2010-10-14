@@ -175,8 +175,9 @@ class SocketIOProtocol(tornado.web.RequestHandler):
     def reset_timeout(self):
         if self._heartbeat_timeout:
             self._heartbeat_timeout.stop() # shut off the old one...
-        self._heartbeat_timeout = ioloop.PeriodicCallback(self._heartbeat, self.config['timeout'])
-        self._heartbeat_timeout.start()
+        if self.config['timeout']:
+            self._heartbeat_timeout = ioloop.PeriodicCallback(self._heartbeat, self.config['timeout'])
+            self._heartbeat_timeout.start()
 
     def _heartbeat(self):
         # TODO - Check we *RECEIVE* heartbeats
