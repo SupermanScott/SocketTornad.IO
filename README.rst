@@ -1,7 +1,10 @@
+===============
 SocketTornad.IO
 ===============
+
 Release 0.1.2
 ^^^^^^^^^^^^^
+
 Brendan W. McAdams bmcadams@novus.com
 -------------------------------------
 
@@ -31,7 +34,7 @@ This version is designed for making
 happy.
 
 Implementing SocketTornad.IO
-============================
+----------------------------
 
 As a user your only major requirement is to subclass
 ``tornad_io.socket_io.SocketIOHandler``. This base class provides
@@ -131,10 +134,10 @@ attached to it:
    changes will be lost.
 
 Configuring SocketTornad.IO
-===========================
+---------------------------
 
 Routes (e.g. how clients access you)
-------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 It is necessary in Tornado set up your 'resources' (known in some
 frameworks as 'routes') which define what paths are valid and what
@@ -271,10 +274,10 @@ Configuring these settings is done by passing them to the
        flash_policy_port=8043, flash_policy_file='/etc/lighttpd/flashpolicy.xml', socket_io_port=8888)
 
 Starting Up
-===========
+-----------
 
 Best Way: SocketIOServer
-------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 The SocketTornad.IO distribution contains a modified version of the
 Tornado ``HTTPServer`` class designed to automatically read the
@@ -293,7 +296,7 @@ instantiate a ``tornad_io.SocketIOServer``:
         socketio_server = SocketIOServer(application)
 
 Starting Manually
------------------
+^^^^^^^^^^^^^^^^^
 
 If you'd like more control over how you start everything up you can
 start things manually, similar to the
@@ -309,10 +312,10 @@ requires booting the IOLoop yourself:
         tornado.ioloop.IOLoop.instance().start()
 
 Examples
-========
+--------
 
 Chatroom Example
-----------------
+^^^^^^^^^^^^^^^^
 
 There is a chatroom example application contributed by
 `swanson <http://github.com/swanson>`_. It is in the
