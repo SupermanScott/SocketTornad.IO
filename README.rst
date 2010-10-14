@@ -24,7 +24,7 @@ Release 0.1.3
 
 Contributors
 ~~~~~~~~~~~~
-- `Brendan W. McAdams bwmcadams@evilmonkeylabs.com`_
+- Brendan W. McAdams bwmcadams@evilmonkeylabs.com
 - `Matt Swanson <http://github.com/swanson>`_
 
 
