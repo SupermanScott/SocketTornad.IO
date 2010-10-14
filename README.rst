@@ -5,8 +5,6 @@ SocketTornad.IO
 Release 0.1.3
 ^^^^^^^^^^^^^
 
-Brendan W. McAdams bwmcadams@evilmonkeylabs.com
------------------------------------------------
 
 
   Copyright (c) 2010, Brendan W. McAdams & Novus Partners, Inc. <http://novus.com> 
@@ -26,7 +24,7 @@ Brendan W. McAdams bwmcadams@evilmonkeylabs.com
 
 Contributors
 ~~~~~~~~~~~~
-
+- `Brendan W. McAdams bwmcadams@evilmonkeylabs.com`_
 - `Matt Swanson <http://github.com/swanson>`_
 
 
