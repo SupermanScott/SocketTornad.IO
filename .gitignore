@@ -2,3 +2,6 @@
 *.swo
 *.pyc
 pyenv
+build
+SocketTornad.IO.egg-info/
+dist/
