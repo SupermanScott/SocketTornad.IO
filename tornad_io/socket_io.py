@@ -130,7 +130,7 @@ class SocketIOProtocol(tornado.web.RequestHandler):
                     try:
                         msg = self.message_queue.get(timeout=self.config['duration'])
                         self.output_handle.send(msg, skip_queue=True)
-                    except Exception as e:
+                    except Exception, e:
                         self.warning("Exception while popping queue (%s) - returning message (%s) to queue." % (e, msg))
                         if msg:
                             self.message_queue.put(msg)
@@ -187,7 +187,7 @@ class SocketIOProtocol(tornado.web.RequestHandler):
                 self.send('~h~%d' % self._heartbeats)
             else:
                 raise Exception, "Connection closed."
-        except Exception as e:
+        except Exception, e:
             self._abort()
 
     def on_heartbeat(self, beat):

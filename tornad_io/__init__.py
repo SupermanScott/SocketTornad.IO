@@ -80,7 +80,7 @@ class SocketIOHandler(tornado.web.RequestHandler):
                 self.protocol_impl._execute(transforms, *extra, **kwargs)
             else:
                 raise Exception("Handler for protocol '%s' is currently unavailable." % protocol)
-        except ValueError as e:
+        except ValueError, e:
             logging.warning("Malformed request received: %s" % e)
             self._abort(400)
             return
