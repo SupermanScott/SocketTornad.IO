@@ -123,7 +123,7 @@ class XHRPollingSocketIOHandler(PollingSocketIOHandler):
 
     @tornado.web.asynchronous
     def get(self, *args, **kwargs):
-        self.output_handle = self # Stays handle as long as polling runs.
+        self.save_output_handle(self) # Stays handle as long as polling runs.
         ## IMPORTANT - Capture the output handle now as *THIS* is the polling method
         # TODO - Buffering of messages in case nothing is open? This *COULD* potentially race
         # Runs for the poll time and then writes '' and closes.

@@ -108,8 +108,8 @@ class SocketIOProtocol(tornado.web.RequestHandler):
     def output_handle(self):
         return self.session.get("output_handle", None)
 
-    @output_handle.setter
-    def output_handle(self, fh):
+#    @output_handle.setter
+    def save_output_handle(self, fh):
         self.debug("Setting new output handle (%s)" % fh)
         if not getattr(self.session, 'id', None):
             self.warning("No session setup yet. Ignoring FH Set.")
@@ -160,7 +160,7 @@ class SocketIOProtocol(tornado.web.RequestHandler):
             payload.append(self.session.id)
             self.handshaked = True
 
-        self.output_handle = self
+        self.save_output_handle(self)
         self.session.save()
 
         payload.extend(self._write_queue)
